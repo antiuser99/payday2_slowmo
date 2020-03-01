@@ -1,0 +1,26 @@
+{
+	"name": "Slow-mo.lua",
+	"description": "Slows players down.",
+	"author": "BakedBunnyBaker",
+	"contact": "-",
+	"version": "1.0",
+	"keybinds": 
+	[
+		{
+			"keybind_id": "Slow_Mo",
+			"name": "Slow-mo.lua",
+			"description": "-",
+			"script_path": "Slow-mo.lua",
+			"run_in_menu": true,
+			"run_in_game": true,
+			"localized": false
+		}
+	],
+	"hooks": 
+	[
+			{"hook_id": "lib/managers/menumanager","script_path": "Slow-mo.lua"},
+			{"hook_id": "lib/managers/gameplaycentralmanager","script_path": "Slow-mo.lua"},
+			{"hook_id": "lib/network/base/basenetworksession","script_path": "Slow-mo.lua"},
+			{"hook_id": "lib/network/base/networkpeer","script_path": "Slow-mo.lua"}
+	]
+}
